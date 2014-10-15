@@ -46,4 +46,13 @@ public class ActivityAnimator
 	{
 		a.overridePendingTransition(R.anim.unzoom_in, R.anim.unzoom_out);
 	}
+    
+    public void PullRightPushLeft(Activity a)
+    {
+        a.overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
+    }
+    public void PullLeftPushRight(Activity a)
+    {
+        a.overridePendingTransition(R.anim.pull_in_left, R.anim.push_out_right);
+    }
 }
